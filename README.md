@@ -2,6 +2,8 @@
 
 Este é um site institucional desenvolvido para Denise, produtora de eventos especializada em casamentos, aniversários e eventos corporativos.
 
+O site está no ar: https://thihit.github.io/DeniseEventos/
+
 ## 🔍 Sobre o projeto
 
 O projeto tem como objetivo apresentar de forma visual e objetiva os serviços oferecidos, além de facilitar o contato com clientes em potencial. Foi desenvolvido com foco em:
