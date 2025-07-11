@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Playfair Display", sans-serif;
+    color: #d63384;
+}
+
+
+
+/* Estilo da header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px
+}
+
+header h1{
+    font-size: 20px;
+}
+
+#navList{
+    display: flex;
+    gap: 30px;
+}
+
+.navItem{
+    list-style: none;
+    color: #111827;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #111827;
+
+    &:hover{
+       color: #d63384; 
+    }
+}
+
+/* Estilo do menu responsivo */
+
+#mobileMenuIcon{
+    display: none;
+}
+
+#mobileMenu{
+    display: none;
+}
+
+/* Estilo da intro */
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 54px);
+    background-color: rgb(0, 0, 0, 0.6);
+    
+    color: #fff;
+}
+
+#introTitle{
+    font-family: "Playfair Display";
+    font-size: 50px ;
+}
+
+#intro h1{
+    color: #fff;
+}
+
+#intro p{
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#intro button{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #d63384;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+
+
+    &:hover{
+        cursor: pointer;
+        background-color: #b0276c;
+    }
+}
+
+#buttonLink{
+    text-decoration: none;
+    color: #fff;
+}
+/* Estilo da whoAmI */
+
+#whoAmI{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3f4f6 ;
+    height: 100vh;
+    padding: 50px ;
+}
+
+#thatsMeImg{
+    width: 400px;
+    border-radius: 20px;
+}
+
+#thatsMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    max-width: 380px;
+}
+
+#thatsMe h1{
+    font-family: "Playfair Display";
+    color: #d63384;
+    font-size: 40px;
+}
+
+#thatsMe p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* Estilo da services */
+
+
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#services h1{
+    font-family: "Playfair Display";
+    color: #d63384;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#servicesContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.servicesSquare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.1) ;
+    gap: 10px;
+
+    background-color: #f9fafb;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+
+    &:hover{
+        transform: translateY(-20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.servicesImg{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.servicesSquare h2{
+    font-weight: 400;
+}
+
+.servicesSquare p{
+    text-align: center;
+}
+
+/* Estilo dos contatos */
+
+#contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    gap: 15px;
+
+    background-color: #f3f4f6;
+}
+
+#contacts h1{
+    color: #d63384;
+    font-family: "Playfair Display";
+    font-size: 40px;
+}
+
+#contacts p{
+    font-size: 20px;
+}
+
+#socialMedia{
+    display: flex;
+    gap: 20px;
+}
+
+.socialMediaBtn{
+    background-color: #d63384;
+    color:#fff;
+    padding: 15px;
+    border-radius: 25px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #b0276c;
+    }
+}
+
+#ig{
+    background-color: #111827;
+
+    &:hover{
+        background-color: #304063;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #111827;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilo Responsivo */
+
+@media (max-width: 800px){
+
+    #thatsMeImg{
+    width: 300px;
+}
+
+
+    #thatsMe{
+    gap: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+#thatsMe h1{
+    font-size: 30px;
+}
+
+#thatsMe p{
+    font-size: 17px;
+}
+
+.servicesSquare{
+    padding: 10px;
+    gap: 10px;
+    max-width: 250px;
+}
+
+
+.servicesImg{
+    width: 180px;
+}
+
+.servicesSquare h2{
+    font-size: 20px;
+}
+
+.servicesSquare p{
+    font-size: 15px;
+}
+
+
+}
+
+@media (max-width: 400px ){
+
+/* Estilo do menu responsivo */
+
+.navItem{
+    display: none;
+}
+
+#mobileMenuIcon{
+    display: block;
+    font-size: 25px;
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+#mobileMenu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem ;
+}
+
+#mobileMenu .navItem{
+    display: block;
+    padding-top: 1.2rem;
+    font-size: 18px;
+}
+
+
+.show{
+    display: block !important;
+}
+
+/* Estilo da header */
+
+header h1{
+    font-size: 30px;
+}
+
+/* Estilo da intro */
+
+#intro{
+    text-align: center;
+    gap: 30px;
+}
+
+#introTitle{
+    font-size: 35px ;
+}
+
+#intro p{
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+/* Estilo da whoAmI */
+
+#whoAmI{
+    flex-direction: column;
+    align-items: center;
+}
+
+#thatsMeImg{
+    width: 300px;
+}
+
+#thatsMe p{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Estilo da services */
+
+#services{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+#servicesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.servicesSquare{
+    width: 90%;
+    max-width: 300px;
+}
+
+.servicesImg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+/* Estilo dos contatos */
+
+#contacts{
+    margin-top: 60px;
+}
+
+#contacts p{
+    font-size: 15px;
+    text-align: center;
+}
+
+#socialMedia{
+    display: flex;
+    gap: 20px;
+}
+
+.socialMediaBtn{
+    background-color: #d63384;
+    color:#fff;
+    padding: 15px;
+    border-radius: 25px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #b0276c;
+    }
+}
+
+#ig{
+    background-color: #111827;
+
+    &:hover{
+        background-color: #304063;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: #111827;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+
+
+
+}
